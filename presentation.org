@@ -18,7 +18,7 @@
   - /My editor/ is perfectly setup...
   - I'll just use some plugins...
 
-* Three hours later...
+* Four hours later...
   #+ATTR_HTML: :width 55% :height 55%
   [[file:imgs/actual_editor_image.jpg]]
   - source: [[https://www.instagram.com/p/BzSwI61IlQD/][Instagram Animals 100]]
@@ -31,7 +31,7 @@
   - easily switch projects / cabal targets
 
 * Caveat
-  - some things are not implemented
+  - some bits are not implemented
   - may crash
 
 * More cool bits
