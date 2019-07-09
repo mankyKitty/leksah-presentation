@@ -1,0 +1,56 @@
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js@3.7.0
+#+REVEAL_TITLE_SLIDE: <h1>%t</h1><h2>%a</h2><h4>Queensland&nbsp;Functional&nbsp;Programming&nbsp;Lab</h4><h3>%e</h3>
+#+REVEAL_PLUGINS: (markdown)
+#+OPTIONS: num:nil
+#+OPTIONS: toc:nil
+
+#+TITLE: Leksah
+#+AUTHOR: Sean Chalmers
+#+EMAIL: schalmers@qfpl.io
+
+* Wat
+  Cross-platform Haskell IDE written in Haskell. yey!
+
+* Why
+  I'd just like to hack on some Haskell, thanks.
+
+* Psssh
+  - /My editor/ is perfectly setup...
+  - I'll just use some plugins...
+
+* Three hours later...
+  #+ATTR_HTML: :width 55% :height 55%
+  [[file:imgs/actual_editor_image.jpg]]
+  - source: [[https://www.instagram.com/p/BzSwI61IlQD/][Instagram Animals 100]]
+
+* Cool bits
+  #+ATTR_REVEAL: :frag (roll-in)
+  - awareness of cabal files
+  - project level config from ~cabal.project~
+  - fast feedback with near zero setup
+  - easily switch projects / cabal targets
+
+* Caveat
+  - some things are not implemented
+  - may crash
+
+* More cool bits
+  - build with ~ghci~ / ~ghc~ / ~ghcjs~
+  - easy ~:type~, ~:kind~, and ~:info~
+  - built-in nix integration
+
+* Future
+  Reflex powered UI!
+
+* What you can do
+  Help out! 
+  - Project is well laid out
+  - Code is approachable
+  - Hamish (lead maintainer/author) is awesome
+
+* Links
+  - Repo: https://github.com/leksah/leksah
+  - Site: https://leksah.org
+    
+* Alternative
+  - Yi: http://yi-editor.github.io/

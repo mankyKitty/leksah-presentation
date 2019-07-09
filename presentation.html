@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Leksah</title>
+<meta name="author" content="(Sean Chalmers)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/css/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/css/theme/moon.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1>Leksah</h1><h2>Sean Chalmers</h2><h4>Queensland&nbsp;Functional&nbsp;Programming&nbsp;Lab</h4><h3><a href="mailto:schalmers@qfpl.io">schalmers@qfpl.io</a></h3>
+</section>
+
+<section>
+<section id="slide-org05e0c76">
+<h2 id="org05e0c76">Wat</h2>
+<p>
+Cross-platform Haskell IDE written in Haskell. yey!
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgf7dd744">
+<h2 id="orgf7dd744">Why</h2>
+<p>
+I'd just like to hack on some Haskell, thanks.
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orga445fe7">
+<h2 id="orga445fe7">Psssh</h2>
+<ul>
+<li><i>My editor</i> is perfectly setup&#x2026;</li>
+<li>I'll just use some plugins&#x2026;</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgfca7b5a">
+<h2 id="orgfca7b5a">Three hours later&#x2026;</h2>
+
+<div class="figure">
+<p><img src="imgs/actual_editor_image.jpg" alt="actual_editor_image.jpg" width="55%" height="55%" />
+</p>
+</div>
+<ul>
+<li>source: <a href="https://www.instagram.com/p/BzSwI61IlQD/">Instagram Animals 100</a></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgb068726">
+<h2 id="orgb068726">Cool bits</h2>
+<ul>
+<li class="fragment roll-in">awareness of cabal files</li>
+<li class="fragment roll-in">project level config from <code>cabal.project</code></li>
+<li class="fragment roll-in">fast feedback with near zero setup</li>
+<li class="fragment roll-in">easily switch projects / cabal targets</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org84dd884">
+<h2 id="org84dd884">Caveat</h2>
+<ul>
+<li>some things are not implemented</li>
+<li>may crash</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgdddfbb3">
+<h2 id="orgdddfbb3">More cool bits</h2>
+<ul>
+<li>build with <code>ghci</code> / <code>ghc</code> / <code>ghcjs</code></li>
+<li>easy <code>:type</code>, <code>:kind</code>, and <code>:info</code></li>
+<li>built-in nix integration</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgc9c8082">
+<h2 id="orgc9c8082">Future</h2>
+<p>
+Reflex powered UI!
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org9fe45fc">
+<h2 id="org9fe45fc">What you can do</h2>
+<p>
+Help out! 
+</p>
+<ul>
+<li>Project is well laid out</li>
+<li>Code is approachable</li>
+<li>Hamish (lead maintainer/author) is awesome</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgfca75cf">
+<h2 id="orgfca75cf">Links</h2>
+<ul>
+<li>Repo: <a href="https://github.com/leksah/leksah">https://github.com/leksah/leksah</a></li>
+<li>Site: <a href="https://leksah.org">https://leksah.org</a></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgaa754f2">
+<h2 id="orgaa754f2">Alternative</h2>
+<ul>
+<li>Yi: <a href="http://yi-editor.github.io/">http://yi-editor.github.io/</a></li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } }]
+});
+</script>
+</body>
+</html>
