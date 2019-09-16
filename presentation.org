@@ -30,9 +30,10 @@
   - fast feedback with near zero setup
   - easily switch projects / cabal targets
 
-* Caveat
+* Not so cool bits
   - some bits are not implemented
   - may crash
+  - somewhat bound to GHC versions
 
 * More cool bits
   - build with ~ghci~ / ~ghc~ / ~ghcjs~
